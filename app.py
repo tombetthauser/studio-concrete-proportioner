@@ -12,6 +12,8 @@ input_dict = {
  "total_vol_ml": None
 }
 
+output_dict = {}
+
 output_ml_dict = {
   "water": None,
   "concrete": None,
@@ -21,7 +23,7 @@ output_ml_dict = {
 }
 
 os.system("clear")
-print("CONCRETE PROPORTIONER:\n")
+print("----- CONCRETE PROPORTIONER -----\n")
 input_dict["total_vol_ml"] = int(input("Enter total volume in millileters: "))
 
 proportion_total = 0
@@ -31,7 +33,11 @@ for k in conversion_table:
 
 for k in conversion_table:
   conversion_table[k] = conversion_table[k] / proportion_total
+  output_dict[k] = round(input_dict["total_vol_ml"] * conversion_table[k], 2)
 
-print(conversion_table)
-# print(input_dict)
+print("\n\n--- OUTPUT ---\n")
 
+for k in output_dict:
+  print(k, output_dict[k], "(ml)")
+
+print("\n--- END ---\n\n")
