@@ -1,5 +1,9 @@
 import os
 
+config_dict = {
+  "adjustment_index": 1.44
+}
+
 conversion_table = {
   "water": 27.5,
   "concrete": 110,
@@ -33,7 +37,7 @@ for k in conversion_table:
 
 for k in conversion_table:
   conversion_table[k] = conversion_table[k] / proportion_total
-  output_dict[k] = round(input_dict["total_vol_ml"] * conversion_table[k], 2)
+  output_dict[k] = round(input_dict["total_vol_ml"] * conversion_table[k] * config_dict["adjustment_index"], 2)
 
 print("\n\n--- OUTPUT ---\n")
 
