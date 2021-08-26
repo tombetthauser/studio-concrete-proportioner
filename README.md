@@ -1,0 +1,3 @@
+# Welcome to my Concrete Casting Proportioner 🗿✨
+
+This is a bare-bones personal studio tool to help keep track of ideal proportioning for the materials necessary for making small concrete casts of sculptures. The goal is to continue adjusting it until an optimal balance of materials is found for my specific needs / environment etc. Potentially it could easily be adapted to other proportioning needs but the project would need to be forked.
