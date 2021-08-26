@@ -5,5 +5,5 @@ This is a bare-bones personal studio tool to help keep track of ideal proportion
 Adjustments to proportions need to be made manually in the dictionaries provided at the top of the app.py file. The script primarily runs through prompts in the terminal though. To run the application enter the following in your command line / terminal.
 
 ```shell
-$ python3 app.py
+python3 app.py
 ```
